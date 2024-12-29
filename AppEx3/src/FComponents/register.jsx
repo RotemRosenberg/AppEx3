@@ -15,8 +15,6 @@ import {
 	MenuItem,
 } from '@mui/material';
 
-// ... (previous imports)
-
 const Register = () => {
 	const [formData, setFormData] = useState({
 		username: '',
