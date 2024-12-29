@@ -5,7 +5,7 @@ import {
   Typography,
   TextField,
   Button,
-  Grid2,
+  Grid,
 
 } from '@mui/material';
 import Profile from './profile';
@@ -71,7 +71,7 @@ const handleSubmit = (e) => {
             Login
           </Typography>
           <form onSubmit={handleSubmit} style={{marginTop:'10px',marginBottom:'10px'}}>
-              <Grid2 item xs={12} sm={6} style={{marginBottom:'10px'}} >
+              <Grid item xs={12} sm={6} style={{marginBottom:'10px'}} >
                 <TextField
                   fullWidth
                   label="Username"
@@ -80,8 +80,8 @@ const handleSubmit = (e) => {
                   onChange={handleChange}
                   required
                   />
-              </Grid2>
-              <Grid2 item xs={12} sm={6}  style={{marginBottom:'10px'}}>
+              </Grid>
+              <Grid item xs={12} sm={6}  style={{marginBottom:'10px'}}>
                 <TextField
                   fullWidth
                   label="Password"
@@ -91,7 +91,7 @@ const handleSubmit = (e) => {
                   onChange={handleChange}
                   required
                   />
-              </Grid2>
+              </Grid>
               <Button type="submit" fullWidth variant="contained" color="primary" style={{marginTop:'10px'}}>
               Login
             </Button>

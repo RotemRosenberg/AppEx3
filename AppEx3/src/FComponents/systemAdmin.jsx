@@ -6,7 +6,7 @@ import {
 	Container,
 	Typography,
 	FormControl,
-	Grid2,
+	Grid,
 	Paper,
 	Avatar,
 	Link,

@@ -5,7 +5,7 @@ import {
 	Typography,
 	TextField,
 	Button,
-	Grid2,
+	Grid,
 	FormHelperText,
 	Avatar,
 	Autocomplete,
@@ -193,8 +193,8 @@ const Register = () => {
 					Register
 				</Typography>
 				<form onSubmit={handleSubmit}>
-					<Grid2 container spacing={2}>
-						<Grid2 item xs={12}>
+					<Grid container spacing={2}>
+						<Grid item xs={12}>
 							<TextField
 								fullWidth
 								label="Username"
@@ -219,8 +219,8 @@ const Register = () => {
 										characters.
 									</FormHelperText>
 								)}
-						</Grid2>
-						<Grid2 item xs={12} sm={6}>
+						</Grid>
+						<Grid item xs={12} sm={6}>
 							<TextField
 								fullWidth
 								label="Password"
@@ -246,8 +246,8 @@ const Register = () => {
 										number.
 									</FormHelperText>
 								)}
-						</Grid2>
-						<Grid2 item xs={12} sm={6}>
+						</Grid>
+						<Grid item xs={12} sm={6}>
 							<TextField
 								fullWidth
 								label="Confirm Password"
@@ -261,9 +261,9 @@ const Register = () => {
 							{formData.confirmPassword !== formData.password && (
 								<FormHelperText error>Passwords do not match</FormHelperText>
 							)}
-						</Grid2>
+						</Grid>
 
-						<Grid2 item xs={12} sm={6}>
+						<Grid item xs={12} sm={6}>
 							<TextField
 								fullWidth
 								label="Name"
@@ -278,8 +278,8 @@ const Register = () => {
 									Name must contain only letters.
 								</FormHelperText>
 							)}
-						</Grid2>
-						<Grid2 item xs={12} sm={6}>
+						</Grid>
+						<Grid item xs={12} sm={6}>
 							<TextField
 								fullWidth
 								label="Family Name"
@@ -298,8 +298,8 @@ const Register = () => {
 										Name must contain only letters.
 									</FormHelperText>
 								)}
-						</Grid2>
-						<Grid2 item xs={12}>
+						</Grid>
+						<Grid item xs={12}>
 							{/* <input
                   accept="image/*"
                   style={{ display: 'none' }}
@@ -322,10 +322,10 @@ const Register = () => {
 								</Button>
 							</label>
 							<FormHelperText>{messageInputPic}</FormHelperText>
-						</Grid2>
+						</Grid>
 						{/* Add more fields as needed */}
-					</Grid2>
-					<Grid2 item xs={12} sm={6} style={{ marginTop: '10px' }}>
+					</Grid>
+					<Grid item xs={12} sm={6} style={{ marginTop: '10px' }}>
 						<TextField
 							fullWidth
 							label="Email"
@@ -348,8 +348,8 @@ const Register = () => {
 									there should be '.com' only.
 								</FormHelperText>
 							)}
-					</Grid2>
-					<Grid2 item xs={12} sm={6} style={{ marginTop: '10px' }}>
+					</Grid>
+					<Grid item xs={12} sm={6} style={{ marginTop: '10px' }}>
 						<TextField
 							fullWidth
 							label="Birth Date"
@@ -368,9 +368,9 @@ const Register = () => {
 								Invalid birth date. Please enter a valid and not a future date.
 							</FormHelperText>
 						)}
-					</Grid2>
-					<Grid2 container spacing={2} style={{ marginTop: '10px' }}>
-						<Grid2 item xs={12}>
+					</Grid>
+					<Grid container spacing={2} style={{ marginTop: '10px' }}>
+						<Grid item xs={12}>
 							{/* Autocomplete for city */}
 							<Autocomplete
 								name="city"
@@ -397,9 +397,9 @@ const Register = () => {
 									Invalid city. Please select a city from the list.
 								</FormHelperText>
 							)}
-						</Grid2>
+						</Grid>
 
-						<Grid2 item xs={12} sm={6}>
+						<Grid item xs={12} sm={6}>
 							{/* TextField for street */}
 							<TextField
 								fullWidth
@@ -421,9 +421,9 @@ const Register = () => {
 										Invalid street. Please enter only Hebrew letters.
 									</FormHelperText>
 								)}
-						</Grid2>
+						</Grid>
 
-						<Grid2 item xs={12} sm={6}>
+						<Grid item xs={12} sm={6}>
 							{/* TextField for street */}
 							<TextField
 								fullWidth
@@ -443,8 +443,8 @@ const Register = () => {
 									Invalid input. Please enter only numbers.
 								</FormHelperText>
 							)}
-						</Grid2>
-					</Grid2>
+						</Grid>
+					</Grid>
 
 					<Button
 						type="submit"
