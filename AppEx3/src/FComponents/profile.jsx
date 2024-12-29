@@ -5,7 +5,7 @@ import {
 	Container,
 	Typography,
 	FormControl,
-	Grid,
+	Grid2,
 	Paper,
 	Avatar,
 	Link,
@@ -84,7 +84,7 @@ function Profile({ loggedUser, onLogout }) {
 	};
 
 	return (
-		<Grid>
+		<Grid2>
 			<Paper elevation={1} style={ProfileStyle.paperStyle}>
 				<Container maxWidth="xl">
 					<Typography
@@ -112,8 +112,8 @@ function Profile({ loggedUser, onLogout }) {
 						</p>
 					</div>
 					<p>{user.birthDate}</p>
-					<Grid container spacing={2}>
-						<Grid item xs={4}>
+					<Grid2 container spacing={2}>
+						<Grid2 item xs={4}>
 							<Button
 								type="submit"
 								variant="contained"
@@ -123,8 +123,8 @@ function Profile({ loggedUser, onLogout }) {
 								onClick={handleUpdateButtonClick}>
 								Update Details
 							</Button>
-						</Grid>
-						<Grid item xs={4}>
+						</Grid2>
+						<Grid2 item xs={4}>
 							<Button
 								type="submit"
 								variant="contained"
@@ -134,8 +134,8 @@ function Profile({ loggedUser, onLogout }) {
 								onClick={handleGameClick}>
 								Game
 							</Button>
-						</Grid>
-						<Grid item xs={4}>
+						</Grid2>
+						<Grid2 item xs={4}>
 							<Button
 								type="submit"
 								variant="contained"
@@ -145,12 +145,12 @@ function Profile({ loggedUser, onLogout }) {
 								onClick={() => handleLogoutClick(user.email)}>
 								Log out
 							</Button>
-						</Grid>
-					</Grid>
+						</Grid2>
+					</Grid2>
 					{showUpdate ? <EditDetails userToEdit={user} onUpdate={handleUpdate} ></EditDetails> : <></>}
 				</Container>
 			</Paper>
-		</Grid>
+		</Grid2>
 	);
 }
 

@@ -6,7 +6,7 @@ import {
   Typography,
   TextField,
   Button,
-  Grid,
+  Grid2,
   FormHelperText,
   Avatar,
   Autocomplete,
@@ -202,8 +202,8 @@ const EditDetails = ({userToEdit,onUpdate}) => {
             EditDetails
           </Typography>
           <form onSubmit={handleSubmit}>
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
+            <Grid2 container spacing={2}>
+              <Grid2 item xs={12}>
                 <TextField
                   fullWidth
                   label="Username"
@@ -218,8 +218,8 @@ const EditDetails = ({userToEdit,onUpdate}) => {
                  Username must contain only Latin letters (a-z, A-Z), numbers, and special characters. Maximum length is 60 characters.
                 </FormHelperText>
               )}
-              </Grid>
-              <Grid item xs={12} sm={6}>
+              </Grid2>
+              <Grid2 item xs={12} sm={6}>
                 <TextField
                   fullWidth
                   label="Password"
@@ -235,8 +235,8 @@ const EditDetails = ({userToEdit,onUpdate}) => {
                 Password must be 7 to 12 characters long and contain at least one special character, one uppercase letter, and one number.
                 </FormHelperText>
               )}
-              </Grid>
-              <Grid item xs={12} sm={6}>
+              </Grid2>
+              <Grid2 item xs={12} sm={6}>
                 <TextField
                   fullWidth
                   label="Confirm Password"
@@ -252,9 +252,9 @@ const EditDetails = ({userToEdit,onUpdate}) => {
                     Passwords do not match
                 </FormHelperText>
               )}
-              </Grid>
+              </Grid2>
               
-              <Grid item xs={12} sm={6}>
+              <Grid2 item xs={12} sm={6}>
                 <TextField
                   fullWidth
                   label="Name"
@@ -269,8 +269,8 @@ const EditDetails = ({userToEdit,onUpdate}) => {
                Name must contain only letters.
               </FormHelperText>
             )}
-              </Grid>
-              <Grid item xs={12} sm={6}>
+              </Grid2>
+              <Grid2 item xs={12} sm={6}>
                 <TextField
                   fullWidth
                   label="Family Name"
@@ -286,8 +286,8 @@ const EditDetails = ({userToEdit,onUpdate}) => {
                Name must contain only letters.
               </FormHelperText>
             )}
-              </Grid>
-              <Grid item xs={12}>
+              </Grid2>
+              <Grid2 item xs={12}>
                 <input
                   accept="image/*"
                   style={{ display: 'none' }}
@@ -308,10 +308,10 @@ const EditDetails = ({userToEdit,onUpdate}) => {
                 <FormHelperText>
                   {messageInputPic}
                 </FormHelperText>
-              </Grid>
+              </Grid2>
               {/* Add more fields as needed */}
-            </Grid>
-            <Grid item xs={12} sm={6} style={{marginTop:'10px'}} >
+            </Grid2>
+            <Grid2 item xs={12} sm={6} style={{marginTop:'10px'}} >
             <TextField
               fullWidth
               label="Birth Date"
@@ -330,10 +330,10 @@ const EditDetails = ({userToEdit,onUpdate}) => {
                 Invalid birth date. Please enter a valid and not a future date.
               </FormHelperText>
             )}
-          </Grid>
-          <Grid container spacing={2} style={{marginTop:'10px'}}>
+          </Grid2>
+          <Grid2 container spacing={2} style={{marginTop:'10px'}}>
 
-          <Grid item xs={12}>
+          <Grid2 item xs={12}>
             {/* Autocomplete for city */}
             <Autocomplete
               name="city"
@@ -359,12 +359,12 @@ const EditDetails = ({userToEdit,onUpdate}) => {
                 Invalid city. Please select a city from the list.
               </FormHelperText>
             )}
-          </Grid>
+          </Grid2>
 
 
 
 
-          <Grid item xs={12} sm={6}>
+          <Grid2 item xs={12} sm={6}>
             {/* TextField for street */}
             <TextField
               fullWidth
@@ -382,9 +382,9 @@ const EditDetails = ({userToEdit,onUpdate}) => {
                 Invalid street. Please enter only Hebrew letters.
               </FormHelperText>
             )}
-          </Grid>
+          </Grid2>
 
-          <Grid item xs={12} sm={6}>
+          <Grid2 item xs={12} sm={6}>
             {/* TextField for street */}
             <TextField
               fullWidth
@@ -402,8 +402,8 @@ const EditDetails = ({userToEdit,onUpdate}) => {
                 Invalid input. Please enter only numbers.
               </FormHelperText>
             )}
-          </Grid>
-          </Grid>
+          </Grid2>
+          </Grid2>
 
             <Button type="submit" fullWidth variant="contained" color="primary" style={{marginTop:'10px'}}>
               Update
